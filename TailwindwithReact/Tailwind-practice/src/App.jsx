@@ -7,6 +7,7 @@ import ProfileCard from './Components/ProfileCard'
 import Navbar from './Components/Navbar'
 import Pricing from './Components/Pricing'
 import CardPractice from './Components/CardPractice'
+import Testimonials from './Components/Testimonials'
 function App (){
 
     return (<div>
@@ -14,6 +15,8 @@ function App (){
    <ProfileCard/>
    <Pricing/>
    <CardPractice/>
+   <Testimonials/>
+
 
   </div>)
   
