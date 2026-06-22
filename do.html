@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+  </head>
+  <body>
+    <h1 id="greet">Hi !!</h1>
+    <p class="ad">HEllo</p>
+  </body>
+  <script>
+    const a = document.getElementById("greet");
+    console.log("a is ", a);
+    const b = (a.textContent = "Redbull!");
+    console.log("value", b);
+
+    a.style.backgroundColor = "red";
+    a.style.fontSize = "80px";
+  </script>
+</html>
