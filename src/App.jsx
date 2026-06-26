@@ -1,17 +1,20 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
-
+import Render from "./components/AdminOrderTracker";
 import Card from "./components/Usercard";
 import "./App.css";
+import ShoeCard from "./components/AdminOrderTracker";
+import MiniEcommerce from "./components/MiniEcommerce";
+import Practice from "./components/statemnt";
 
 function App() {
-  const [count, setCount] = useState();
-
+ 
+   const[cartItems,setCartItems] = useState([]) ;
+   const[selectedProduct,setSelectedProduct]=  useState(null)
   return (
     <div>
-      <Card />
+    
+
+     < Practice />
     </div>
   );
 }
