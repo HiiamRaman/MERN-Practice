@@ -75,7 +75,7 @@ import React from "react";
 //   const [name, setName] = useState("Stranger");
 
 //   function handler(e) {
-   
+
 //     setName(e.target.value);
 //   }
 
@@ -95,3 +95,35 @@ import React from "react";
 
 // export default Practice;
 
+function Practice() {
+  const [task, setTask] = useState("");
+
+  const [storedValue,setStoredValue] = useState("")
+
+  function handler(e) {
+    setTask(e.target.value);
+  }
+
+  function saveHandler(){
+    setStoredValue(task);
+  }
+  return (
+    <div>
+      <div>
+        <h1>Hello lets build Todo App </h1>
+
+        <label htmlFor="">Write Your task</label>
+        <input   onChange={handler}   placeholder  ="Write Your text here " />
+
+
+         <button  onClick={saveHandler}>add to list </button>
+      </div>
+
+      <div>
+        <h1>the task is {task}</h1>
+      </div>
+    </div>
+  );
+}
+
+export default Practice;
