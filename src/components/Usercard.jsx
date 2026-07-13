@@ -3,7 +3,7 @@ import data from "../Data/data";
 export function Usercard({ name, age, profession, src }) {
   return (
     <div className="flex justify-center p-6">
-      <div className="flex flex-col w-[350px] bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/30">
+      <div className="flex flex-col bg-red-500  w-[350px] bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/30">
         {/* Image: Changed to object-cover so it doesn't squish if the ratio changes */}
         <img className="h-64 w-full object-cover" src={src} alt={name} />
 
@@ -24,7 +24,7 @@ export function Usercard({ name, age, profession, src }) {
   );
 }
 
-export default function Card() {
+export default function Card1() {
   return (
     <div className="  bg-red-200    ">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-4  ">
