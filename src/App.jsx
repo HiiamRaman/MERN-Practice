@@ -12,11 +12,17 @@ import Card from "./components/Card";
 import CardPractice from "./components/Card";
 import Card1 from "./components/Usercard";
 import Register from "./pages/Register";
+import Test from "./components/Test";
 function App() {
+
+  
  
   return (
     <div>
-      <Register/>
+
+
+      <Test/>
+
   
     </div>
   );
