@@ -123,11 +123,9 @@ function Test() {
         const data = await res.json();
         setUsers(data);
         console.log(data);
-        
       } catch (error) {
         console.log(error);
-      }
-      finally{
+      } finally {
         setLoading(false);
       }
     }
